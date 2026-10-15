@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">C++ HTTP 服务器</title>
+  <desc id="desc">结构示意：epoll 线程管理连接；线程池处理请求，经完成队列返回响应。</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#d6e1e8" stroke-width="1"/></pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="m0 0 9 5-9 5" fill="none" stroke="#7898ab" stroke-width="1.7"/></marker>
+  </defs>
+  <rect width="1200" height="760" fill="#e5edf1"/>
+  <rect x="46" y="112" width="1108" height="602" rx="22" fill="url(#grid)"/>
+  <g font-family="Segoe UI, Microsoft YaHei, sans-serif">
+    <text x="62" y="70" font-family="Consolas, monospace" font-size="22" letter-spacing="3" fill="#637f90">HTTP / C++17</text>
+    <text x="1129" y="70" text-anchor="end" font-size="20" fill="#698696">结构示意</text>
+    <rect x="87" y="200" width="275" height="354" rx="21" fill="#2a4757"/>
+    <circle cx="119" cy="231" r="5" fill="#9fc1ce"/>
+    <circle cx="136" cy="231" r="5" fill="#789bab"/>
+    <circle cx="153" cy="231" r="5" fill="#527889"/>
+    <path d="m147 303-33 30 33 30m41-65-18 70m42-65 33 30-33 30" fill="none" stroke="#c7dfe6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="114" y="416" fill="#f1f6f5" font-size="36">HTTP 请求</text>
+    <text x="114" y="459" fill="#adcad4" font-family="Consolas, monospace" font-size="23">GET / POST</text>
+    <text x="114" y="512" fill="#adcad4" font-size="22">分段接收 · 请求解析</text>
+    <path d="M369 365H446" fill="none" stroke="#7898ab" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="464" y="260" width="260" height="199" rx="20" fill="#fbfdfa" stroke="#b9ccd7" stroke-width="2"/>
+    <text x="594" y="326" text-anchor="middle" fill="#2f4e5e" font-family="Consolas, monospace" font-size="34">epoll</text>
+    <path d="M494 351h199" stroke="#dae4e6"/>
+    <text x="594" y="395" text-anchor="middle" fill="#587789" font-size="25">统一管理连接</text>
+    <text x="594" y="432" text-anchor="middle" fill="#7a94a0" font-size="21">连接代号 · 事件循环</text>
+    <path d="M733 339h72" fill="none" stroke="#7898ab" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="826" y="213" width="283" height="259" rx="20" fill="#f8fbf8" stroke="#b9ccd7" stroke-width="2"/>
+    <text x="968" y="269" text-anchor="middle" fill="#355365" font-size="29">工作线程池</text>
+    <g fill="#e4eced" stroke="#c4d4d9"><rect x="855" y="297" width="225" height="38" rx="9"/><rect x="855" y="349" width="225" height="38" rx="9"/><rect x="855" y="401" width="225" height="38" rx="9"/></g>
+    <g fill="#527584" font-family="Consolas, monospace" font-size="20"><text x="967" y="323" text-anchor="middle">worker / request</text><text x="967" y="375" text-anchor="middle">worker / request</text><text x="967" y="427" text-anchor="middle">worker / request</text></g>
+    <path d="M968 483v66q0 22-22 22H614q-20 0-20-20v-77" fill="none" stroke="#7898ab" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="700" y="548" width="159" height="46" rx="23" fill="#d7e3e8"/>
+    <text x="779" y="579" text-anchor="middle" font-size="23" fill="#557787">完成队列</text>
+    <text x="63" y="701" font-size="23" fill="#5b7c8b">注册登录</text><text x="224" y="701" fill="#9baebb" font-size="23">/</text><text x="255" y="701" font-size="23" fill="#5b7c8b">PNG 上传</text><text x="417" y="701" fill="#9baebb" font-size="23">/</text><text x="448" y="701" font-size="23" fill="#5b7c8b">MongoDB</text>
+  </g>
+</svg>

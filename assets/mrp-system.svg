@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">MRP 物料需求计划</title>
+  <desc id="desc">多层 BOM 结构示意。成品、组件与底层物料按拓扑顺序汇总需求，并展开分期计划。</desc>
+  <rect width="1200" height="760" fill="#efe9e1"/>
+  <circle cx="604" cy="394" r="238" fill="none" stroke="#e2d9cb" stroke-width="1.5"/>
+  <circle cx="604" cy="394" r="292" fill="none" stroke="#e4dbcf" stroke-width="1.5" stroke-dasharray="4 10"/>
+  <g font-family="Segoe UI, Microsoft YaHei, sans-serif">
+    <text x="62" y="70" font-family="Consolas, monospace" font-size="22" letter-spacing="3" fill="#8b7761">MATERIAL REQUIREMENTS PLANNING</text>
+    <text x="1129" y="70" text-anchor="end" font-size="20" fill="#8b7761">结构示意</text>
+    <g fill="none" stroke="#bca992" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M600 267v62H337v44M600 329h263v44"/><path d="M337 456v62H213v44M337 518h263v44M863 456v62H600M863 518h124v44"/></g>
+    <rect x="465" y="149" width="270" height="122" rx="21" fill="#6a785c"/>
+    <text x="600" y="198" text-anchor="middle" fill="#dce5ce" font-family="Consolas, monospace" font-size="19">PRODUCT</text>
+    <text x="600" y="239" text-anchor="middle" fill="#fcfdf8" font-size="32">成品</text>
+    <g fill="#fbf9f4" stroke="#d8cbbb" stroke-width="2"><rect x="205" y="374" width="264" height="88" rx="16"/><rect x="731" y="374" width="264" height="88" rx="16"/></g>
+    <g fill="#6c614f" font-size="28" text-anchor="middle"><text x="337" y="429">组件 A</text><text x="863" y="429">组件 B</text></g>
+    <g fill="#e4d8c7" stroke="#d1bfa7" stroke-width="1.5"><rect x="110" y="562" width="206" height="77" rx="15"/><rect x="497" y="562" width="206" height="77" rx="15"/><rect x="884" y="562" width="206" height="77" rx="15"/></g>
+    <g fill="#7b6853" font-size="27" text-anchor="middle"><text x="213" y="610">物料 A</text><text x="600" y="610">共用物料</text><text x="987" y="610">物料 B</text></g>
+    <text x="62" y="701" font-size="23" fill="#8b7761">BOM 拓扑展开</text><text x="274" y="701" font-size="23" fill="#b7a38e">/</text><text x="304" y="701" font-size="23" fill="#8b7761">分期需求</text><text x="461" y="701" font-size="23" fill="#b7a38e">/</text><text x="491" y="701" font-size="23" fill="#8b7761">事务重算</text>
+  </g>
+</svg>
