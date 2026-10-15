@@ -1,6 +1,6 @@
 # Hokkaido 的个人作品集
 
-浅色个人作品集，集中展示系统实验、服务端、产业链分析、数学建模和数据可视化项目。
+个人项目网站，收录系统实验、服务端、产业链分析、数学建模和数据可视化项目。桌面端左侧为名字与项目导航，右侧直接展示项目说明和图片；手机端按顺序阅读。
 
 网站地址：<https://hokkaidoooo.github.io/>。
 
@@ -25,7 +25,7 @@ python -m http.server 4186 --bind 127.0.0.1
 
 ## 图片来源
 
-- `systems-lab.webp`：`cs-systems-lab/docs/validation/cache-comparison.png` 的顶部截图，压缩为 WebP。
+- `systems-lab.webp`：`cs-systems-lab/docs/validation/cache-comparison.png` 的 Cache 实验区域，保留参数、缓存状态和 LRU/FIFO 对照，裁切后压缩为 WebP。
 - `risk-overview.webp`：`supply-chain-risk-core/assets/readme-risk-core.png`，保留合成案例的来源说明。
 - `multibeam.webp`：`cumcm-2023-multibeam/assets/readme-multibeam.png`，图中覆盖结构为概念示意。
 - `weather.webp`：`nanjing-weather-visualization/assets/readme-weather-overview.png`，基于保存的南京 2023 年天气数据。
@@ -34,4 +34,4 @@ python -m http.server 4186 --bind 127.0.0.1
 
 项目资料及原图仍以各自仓库为准。网站配图不会修改原项目的历史图片、数据、论文或分析成品。
 
-如需从相邻项目重新生成 WebP，安装 Pillow 后运行 `python tools/prepare-images.py --projects-root ..`。该命令只重写本仓库的五张 WebP；原图不存在或宽高比不符合约定时会明确报错。
+如需从相邻项目重新生成 WebP，安装 Pillow 后运行 `python tools/prepare-images.py --projects-root ..`。该命令只重写本仓库的五张 WebP；原图不存在、裁切区域越界或宽高比不符合约定时会明确报错。

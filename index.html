@@ -3,195 +3,118 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f9f5">
-  <meta name="description" content="Hokkaido 的个人作品集：系统原理实验、C++ HTTP 服务器、产业链风险分析、MRP，以及数学建模与数据可视化。">
+  <meta name="theme-color" content="#fafaf8">
+  <meta name="description" content="Hokkaido 的项目：系统原理实验室、C++ HTTP 服务器、产业链风险分析、MRP、数学建模与数据可视化。">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Hokkaido — 个人作品集">
-  <meta property="og:description" content="写后端，也做系统与数据。这里是我的项目、实验与分析作品。">
+  <meta property="og:title" content="Hokkaido · 项目">
+  <meta property="og:description" content="系统实验、服务端程序、建模与数据分析。附源码和在线体验入口。">
   <meta property="og:url" content="https://hokkaidoooo.github.io/">
   <meta property="og:locale" content="zh_CN">
   <link rel="canonical" href="https://hokkaidoooo.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/site.css">
-  <title>Hokkaido — 个人作品集</title>
+  <title>Hokkaido · 项目</title>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">跳到正文</a>
-  <header class="site-header wrap">
-    <a class="brand" href="#top" aria-label="Hokkaido，返回顶部">
-      <span class="brand-mark" aria-hidden="true">h.</span>
-      <span>Hokkaido<span class="brand-dot">.</span></span>
-    </a>
-    <nav class="main-nav" aria-label="主导航">
-      <a href="#work">作品</a>
-      <a href="#about">关于</a>
-      <a class="nav-github" href="https://github.com/Hokkaidoooo">GitHub <span aria-hidden="true">↗</span></a>
-    </nav>
-  </header>
+  <div class="layout">
+    <header class="profile">
+      <h1><a href="#top">Hokkaido</a></h1>
+      <p class="profile-languages">C++ / Java / Python</p>
+      <a class="profile-github" href="https://github.com/Hokkaidoooo">GitHub <span aria-hidden="true">↗</span></a>
+      <nav class="project-nav" aria-label="项目导航">
+        <a href="#systems">系统原理实验室</a>
+        <a href="#http">C++ HTTP 服务器</a>
+        <a href="#risk">产业链风险分析</a>
+        <a href="#mrp">物料需求计划</a>
+        <a href="#more">其他项目</a>
+      </nav>
+    </header>
 
-  <main id="main">
-    <section class="hero wrap" aria-labelledby="intro-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="small-star" aria-hidden="true">✳</span> 你好，我是 Hokkaido</p>
-        <h1 id="intro-title">写后端，<br>也做<span class="soft-text">系统与数据。</span></h1>
-        <p class="hero-description">从浏览器里的系统实验，到服务端实现、<br class="desktop-break">产业链分析和数学建模。这里是我做过的项目。</p>
-        <a class="button" href="#work">浏览作品 <span aria-hidden="true">↓</span></a>
-      </div>
-      <div class="hero-aside" aria-hidden="true">
-        <div class="hero-art">
-          <div class="art-orbit orbit-one"></div>
-          <div class="art-orbit orbit-two"></div>
-          <div class="art-tile tile-back"><span>+</span></div>
-          <div class="art-tile tile-middle"><span>{ }</span></div>
-          <div class="art-tile tile-front"><span>&lt;/&gt;</span></div>
-          <span class="art-spark">✳</span>
-          <span class="art-dot"></span>
-        </div>
-        <p class="aside-label">CODE, SYSTEMS &amp; DATA</p>
-      </div>
-      <div class="hero-footnote">
-        <span>个人作品集</span>
-        <span class="language-line">C++ <i>·</i> Java <i>·</i> Python <i>·</i> JavaScript</span>
-      </div>
-    </section>
+    <main id="main" tabindex="-1">
+      <section class="projects" aria-labelledby="projects-title">
+        <h2 class="section-title" id="projects-title">项目</h2>
 
-    <section class="work-section wrap" id="work" aria-labelledby="work-title">
-      <div class="section-heading">
-        <h2 id="work-title">精选作品 <span class="section-count">04</span></h2>
-        <p>从交互实验，到实际的工程问题。</p>
-      </div>
+        <article class="project project-lead" id="systems" aria-labelledby="systems-title">
+          <h3 id="systems-title">系统原理实验室</h3>
+          <p class="stack">JavaScript</p>
+          <p class="project-description">三个交互实验：Cache 替换、地址翻译、TCP Reno。可以调整参数，也可以用同一组访问序列对照 LRU 和 FIFO。</p>
+          <div class="project-links">
+            <a href="https://hokkaidoooo.github.io/cs-systems-lab/">在线体验 <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/Hokkaidoooo/cs-systems-lab">源码 <span aria-hidden="true">↗</span></a>
+          </div>
+          <figure class="project-image lead-image">
+            <img src="assets/systems-lab.webp" width="1280" height="800" alt="Cache 实验的实际界面：参数输入、缓存状态，以及 LRU 和 FIFO 的对照结果" fetchpriority="high">
+          </figure>
+        </article>
 
-      <div class="project-grid">
-        <article class="project" aria-labelledby="systems-title">
-          <a class="project-art art-systems" href="https://hokkaidoooo.github.io/cs-systems-lab/" aria-label="在线体验系统原理实验室">
-            <span class="art-label">INTERACTIVE LAB</span>
-            <span class="browser-frame">
-              <span class="browser-bar"><span></span><span></span><span></span><span class="browser-name">系统原理实验室</span></span>
-              <img class="systems-screenshot" src="assets/systems-lab.webp" width="1280" height="1120" alt="系统原理实验室的实际界面，包含 Cache 参数、访问轨迹与替换状态" fetchpriority="high">
-            </span>
-            <span class="art-open" aria-hidden="true">↗</span>
-          </a>
-          <div class="project-body">
-            <p class="project-kicker">01 / 系统原理 · 交互实验</p>
-            <h3 id="systems-title"><a href="https://github.com/Hokkaidoooo/cs-systems-lab">系统原理实验室</a></h3>
-            <p class="project-description">在浏览器里调整参数，观察 Cache、地址翻译和 TCP Reno。用同一组访问序列，对照 LRU 与 FIFO 的替换过程。</p>
-            <div class="project-bottom">
-              <ul class="tags" aria-label="项目技术"><li>JavaScript</li><li>计算机系统</li></ul>
-              <a class="text-link" href="https://hokkaidoooo.github.io/cs-systems-lab/">在线体验 <span aria-hidden="true">↗</span></a>
-            </div>
+        <article class="project project-row" id="http" aria-labelledby="http-title">
+          <div class="project-copy">
+            <h3 id="http-title">C++ HTTP 服务器</h3>
+            <p class="stack">C++17 / Linux / MongoDB</p>
+            <p class="project-description">epoll 管理连接，线程池处理请求。实现了分段请求解析、注册登录和 PNG 上传。</p>
+            <div class="project-links"><a href="https://github.com/Hokkaidoooo/cpp-http-server">源码与说明 <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <figure class="project-image">
+            <img src="assets/http-server.svg" width="1200" height="760" alt="服务器结构示意：epoll 管理连接，工作线程通过完成队列交回结果" loading="lazy">
+          </figure>
+        </article>
+
+        <article class="project project-row" id="risk" aria-labelledby="risk-title">
+          <div class="project-copy">
+            <h3 id="risk-title">产业链风险分析与授信研究</h3>
+            <p class="stack">Python / NetworkX / NumPy</p>
+            <p class="project-description">读取工商财务数据，计算评分与产业链传导情景，按授信规则导出报告。附合成演示案例和本人编制的决赛分析成品。</p>
+            <div class="project-links"><a href="https://github.com/Hokkaidoooo/supply-chain-risk-core">源码与说明 <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <figure class="project-image">
+            <img src="assets/risk-overview.webp" width="1440" height="800" alt="风险分析项目的合成案例、报告流程和产业链传导示意，图中保留数据来源说明" loading="lazy">
+          </figure>
+        </article>
+
+        <article class="project project-row" id="mrp" aria-labelledby="mrp-title">
+          <div class="project-copy">
+            <h3 id="mrp-title">MRP 物料需求计划系统</h3>
+            <p class="stack">Java / Struts2 / Hibernate / MySQL</p>
+            <p class="project-description">根据 BOM、库存和批量规则计算分期物料需求。重算时，在一个事务里替换整批结果。</p>
+            <div class="project-links"><a href="https://github.com/Hokkaidoooo/mrp-system">源码与说明 <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <figure class="project-image">
+            <img src="assets/mrp-system.svg" width="1200" height="760" alt="物料需求计划结构示意：成品、组件和共用物料组成多层 BOM" loading="lazy">
+          </figure>
+        </article>
+      </section>
+
+      <section class="other-projects" id="more" aria-labelledby="more-title">
+        <h2 class="section-title" id="more-title">其他项目</h2>
+
+        <article class="other-project" aria-labelledby="multibeam-title">
+          <img src="assets/multibeam.webp" width="1080" height="600" alt="多波束测线与海底地形的概念示意" loading="lazy">
+          <div>
+            <h3 id="multibeam-title"><a href="https://github.com/Hokkaidoooo/cumcm-2023-multibeam">多波束测线规划 <span aria-hidden="true">↗</span></a></h3>
+            <p>2023 数模国赛 B 题团队作品。保留论文和代码，补充了覆盖几何与测线约束验算。</p>
           </div>
         </article>
 
-        <article class="project" aria-labelledby="risk-title">
-          <a class="project-art art-risk" href="https://github.com/Hokkaidoooo/supply-chain-risk-core" aria-label="查看产业链风险分析与授信研究项目">
-            <span class="art-label">SUPPLY CHAIN / RISK CORE</span>
-            <img class="report-preview" src="assets/risk-overview.webp" width="1440" height="800" alt="产业链风险项目概览，展示输入到报告的流程，以及已标注来源的合成案例和传导关系" loading="lazy">
-            <span class="art-open" aria-hidden="true">↗</span>
-          </a>
-          <div class="project-body">
-            <p class="project-kicker">02 / Python · 产业链分析</p>
-            <h3 id="risk-title"><a href="https://github.com/Hokkaidoooo/supply-chain-risk-core">产业链风险分析与授信研究</a></h3>
-            <p class="project-description">从工商财务输入到产业链传导，串联评分、授信规则与报告导出。附可运行的合成案例，以及本人编制的决赛分析成品。</p>
-            <div class="project-bottom">
-              <ul class="tags" aria-label="项目技术"><li>Python</li><li>图分析</li><li>报告复现</li></ul>
-              <a class="text-link" href="https://github.com/Hokkaidoooo/supply-chain-risk-core">查看项目 <span aria-hidden="true">↗</span></a>
-            </div>
+        <article class="other-project" aria-labelledby="weather-title">
+          <img src="assets/weather.webp" width="1080" height="675" alt="南京 2023 年全年高低温与天气类别统计" loading="lazy">
+          <div>
+            <h3 id="weather-title"><a href="https://github.com/Hokkaidoooo/nanjing-weather-visualization">南京天气可视化 <span aria-hidden="true">↗</span></a></h3>
+            <p>使用保存的南京 2023 年 365 天天气记录，生成月度图表和年度词云，共 61 张图。</p>
           </div>
         </article>
 
-        <article class="project" aria-labelledby="http-title">
-          <a class="project-art art-http" href="https://github.com/Hokkaidoooo/cpp-http-server" aria-label="查看 C++ HTTP 服务器项目">
-            <img src="assets/http-server.svg" width="1200" height="760" alt="C++ HTTP 服务器结构示意：epoll 管理连接，线程池处理请求，完成队列返回结果" loading="lazy">
-            <span class="art-open" aria-hidden="true">↗</span>
-          </a>
-          <div class="project-body">
-            <p class="project-kicker">03 / C++ · 服务端开发</p>
-            <h3 id="http-title"><a href="https://github.com/Hokkaidoooo/cpp-http-server">C++ HTTP 服务器</a></h3>
-            <p class="project-description">分段解析 HTTP 请求，完成注册登录与 PNG 上传。连接由 epoll 线程统一管理，工作线程处理请求并交回结果。</p>
-            <div class="project-bottom">
-              <ul class="tags" aria-label="项目技术"><li>C++17</li><li>epoll</li><li>MongoDB</li></ul>
-              <a class="text-link" href="https://github.com/Hokkaidoooo/cpp-http-server">查看项目 <span aria-hidden="true">↗</span></a>
-            </div>
+        <article class="other-project" aria-labelledby="news-title">
+          <img src="assets/news-portal.webp" width="1080" height="675" alt="校园新闻门户在隔离验收环境中的实际页面" loading="lazy">
+          <div>
+            <h3 id="news-title"><a href="https://github.com/Hokkaidoooo/campus-news-portal">校园新闻门户 <span aria-hidden="true">↗</span></a></h3>
+            <p>Vue 2 前台，Servlet/JSP 后台。支持新闻通知展示，以及内容和账号管理。</p>
           </div>
         </article>
+      </section>
 
-        <article class="project" aria-labelledby="mrp-title">
-          <a class="project-art art-mrp" href="https://github.com/Hokkaidoooo/mrp-system" aria-label="查看 MRP 物料需求计划系统">
-            <img src="assets/mrp-system.svg" width="1200" height="760" alt="MRP 结构示意：成品、组件和物料组成多层 BOM，按拓扑顺序汇总需求" loading="lazy">
-            <span class="art-open" aria-hidden="true">↗</span>
-          </a>
-          <div class="project-body">
-            <p class="project-kicker">04 / Java · 业务系统</p>
-            <h3 id="mrp-title"><a href="https://github.com/Hokkaidoooo/mrp-system">MRP 物料需求计划系统</a></h3>
-            <p class="project-description">维护物料、BOM 与库存，按拓扑顺序汇总分期需求。支持整批与按需补足，重算在同一事务中替换整批结果。</p>
-            <div class="project-bottom">
-              <ul class="tags" aria-label="项目技术"><li>Java</li><li>Hibernate</li><li>MySQL</li></ul>
-              <a class="text-link" href="https://github.com/Hokkaidoooo/mrp-system">查看项目 <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="more-section wrap" aria-labelledby="more-title">
-      <div class="section-heading">
-        <h2 id="more-title">还有这些探索 <span class="section-count">03</span></h2>
-        <p>建模、数据，以及一个校园门户。</p>
-      </div>
-      <div class="more-grid">
-        <article class="small-project">
-          <a class="small-project-art" href="https://github.com/Hokkaidoooo/cumcm-2023-multibeam" aria-label="查看多波束测线规划项目">
-            <img src="assets/multibeam.webp" width="1080" height="600" alt="多波束测线规划：海底地形与测线覆盖的概念示意" loading="lazy">
-            <span class="small-art-open" aria-hidden="true">↗</span>
-          </a>
-          <p class="project-kicker">数学建模 / 团队作品</p>
-          <h3><a href="https://github.com/Hokkaidoooo/cumcm-2023-multibeam">多波束测线规划 <span aria-hidden="true">↗</span></a></h3>
-          <p>2023 数模国赛 B 题。保留团队论文与历史结果，补充覆盖几何和测线约束验算。</p>
-        </article>
-        <article class="small-project">
-          <a class="small-project-art" href="https://github.com/Hokkaidoooo/nanjing-weather-visualization" aria-label="查看南京天气可视化项目">
-            <img src="assets/weather.webp" width="1080" height="675" alt="南京 2023 年保存的天气数据可视化，包含全年高低温与天气类别" loading="lazy">
-            <span class="small-art-open" aria-hidden="true">↗</span>
-          </a>
-          <p class="project-kicker">Python / 数据可视化</p>
-          <h3><a href="https://github.com/Hokkaidoooo/nanjing-weather-visualization">南京天气可视化 <span aria-hidden="true">↗</span></a></h3>
-          <p>整理保存的 365 天天气记录，生成月度图表与年度词云，共 61 张可视化结果。</p>
-        </article>
-        <article class="small-project">
-          <a class="small-project-art art-news" href="https://github.com/Hokkaidoooo/campus-news-portal" aria-label="查看校园新闻门户项目">
-            <img src="assets/news-portal.webp" width="1080" height="675" alt="校园新闻门户在隔离验收环境中的实际页面，包含新闻和通知列表" loading="lazy">
-            <span class="small-art-open" aria-hidden="true">↗</span>
-          </a>
-          <p class="project-kicker">Vue / Java Web</p>
-          <h3><a href="https://github.com/Hokkaidoooo/campus-news-portal">校园新闻门户 <span aria-hidden="true">↗</span></a></h3>
-          <p>新闻与通知展示，配套内容和账号管理。连接 Vue 前台与 Servlet/JSP 后台。</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="about-section wrap" id="about" aria-labelledby="about-title">
-      <div class="about-card">
-        <div class="about-heading">
-          <p class="eyebrow">ABOUT ME</p>
-          <h2 id="about-title">代码之外，<br>认识一下。</h2>
-          <a class="text-link" href="https://github.com/Hokkaidoooo">去我的 GitHub <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="about-copy">
-          <p>我是 Hokkaido，主要写 C++、Java 和 Python，也用 JavaScript 做交互实验。</p>
-          <p>这个网站整理了我的服务端实现、系统学习和数据分析项目。项目里有源码、使用说明和已有结果，感兴趣的话，可以从一个具体的例子开始看。</p>
-          <dl class="about-details">
-            <div><dt>常用语言</dt><dd>C++ / Java / Python / JavaScript</dd></div>
-            <div><dt>关注方向</dt><dd>后端开发 / 系统原理 / 数据分析</dd></div>
-          </dl>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer wrap">
-    <a class="footer-name" href="#top">Hokkaido<span class="brand-dot">.</span></a>
-    <p>项目、实验，还有持续的学习。</p>
-    <a href="#top" class="back-to-top">回到顶部 <span aria-hidden="true">↑</span></a>
-  </footer>
+      <footer class="site-footer"><a href="#top">回到顶部 <span aria-hidden="true">↑</span></a></footer>
+    </main>
+  </div>
 </body>
 </html>
