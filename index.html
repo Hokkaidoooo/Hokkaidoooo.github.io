@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#fafaf8">
-  <meta name="description" content="Hokkaido 的项目：系统原理实验室、C++ HTTP 服务器、产业链风险分析、MRP、数学建模与数据可视化。">
+  <meta name="description" content="Hokkaido 的项目：C++ HTTP 服务器、产业链风险分析、MRP、系统原理实验室、数学建模与数据可视化。">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Hokkaido · 项目">
   <meta property="og:description" content="系统实验、服务端程序、建模与数据分析。附源码和在线体验入口。">
@@ -23,10 +23,10 @@
       <p class="profile-languages">C++ / Java / Python</p>
       <a class="profile-github" href="https://github.com/Hokkaidoooo">GitHub <span aria-hidden="true">↗</span></a>
       <nav class="project-nav" aria-label="项目导航">
-        <a href="#systems">系统原理实验室</a>
         <a href="#http">C++ HTTP 服务器</a>
         <a href="#risk">产业链风险分析</a>
         <a href="#mrp">物料需求计划</a>
+        <a href="#systems">系统原理实验室</a>
         <a href="#more">其他项目</a>
       </nav>
     </header>
@@ -34,19 +34,6 @@
     <main id="main" tabindex="-1">
       <section class="projects" aria-labelledby="projects-title">
         <h2 class="section-title" id="projects-title">项目</h2>
-
-        <article class="project project-lead" id="systems" aria-labelledby="systems-title">
-          <h3 id="systems-title">系统原理实验室</h3>
-          <p class="stack">JavaScript</p>
-          <p class="project-description">三个交互实验：Cache 替换、地址翻译、TCP Reno。可以调整参数，也可以用同一组访问序列对照 LRU 和 FIFO。</p>
-          <div class="project-links">
-            <a href="https://hokkaidoooo.github.io/cs-systems-lab/">在线体验 <span aria-hidden="true">↗</span></a>
-            <a href="https://github.com/Hokkaidoooo/cs-systems-lab">源码 <span aria-hidden="true">↗</span></a>
-          </div>
-          <figure class="project-image lead-image">
-            <img src="assets/systems-lab.webp" width="1280" height="800" alt="Cache 实验的实际界面：参数输入、缓存状态，以及 LRU 和 FIFO 的对照结果" fetchpriority="high">
-          </figure>
-        </article>
 
         <article class="project project-row" id="http" aria-labelledby="http-title">
           <div class="project-copy">
@@ -56,7 +43,7 @@
             <div class="project-links"><a href="https://github.com/Hokkaidoooo/cpp-http-server">源码与说明 <span aria-hidden="true">↗</span></a></div>
           </div>
           <figure class="project-image">
-            <img src="assets/http-server.svg" width="1200" height="760" alt="服务器结构示意：epoll 管理连接，工作线程通过完成队列交回结果" loading="lazy">
+            <img src="assets/http-server.svg" width="1200" height="760" alt="服务器结构示意：epoll 管理连接，工作线程通过完成队列交回结果" fetchpriority="high">
           </figure>
         </article>
 
@@ -81,6 +68,21 @@
           </div>
           <figure class="project-image">
             <img src="assets/mrp-system.svg" width="1200" height="760" alt="物料需求计划结构示意：成品、组件和共用物料组成多层 BOM" loading="lazy">
+          </figure>
+        </article>
+
+        <article class="project project-row" id="systems" aria-labelledby="systems-title">
+          <div class="project-copy">
+            <h3 id="systems-title">系统原理实验室</h3>
+            <p class="stack">JavaScript</p>
+            <p class="project-description">三个交互实验：Cache 替换、地址翻译、TCP Reno。可以调整参数，也可以用同一组访问序列对照 LRU 和 FIFO。</p>
+            <div class="project-links">
+              <a href="https://hokkaidoooo.github.io/cs-systems-lab/">在线体验 <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/Hokkaidoooo/cs-systems-lab">源码 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <figure class="project-image">
+            <img src="assets/systems-lab.webp" width="1280" height="800" alt="Cache 实验的实际界面：参数输入、缓存状态，以及 LRU 和 FIFO 的对照结果" loading="lazy">
           </figure>
         </article>
       </section>

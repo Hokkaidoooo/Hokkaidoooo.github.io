@@ -36,21 +36,16 @@ img { display: block; max-width: 100%; height: auto; }
 .project-nav a:last-child { margin-top: 9px; }
 
 .section-title { margin-bottom: 28px; font-size: 17px; font-weight: 500; line-height: 1.5; }
-.project h3 { font-size: 25px; font-weight: 600; letter-spacing: -.035em; line-height: 1.45; }
+.project h3 { font-size: 21px; font-weight: 600; letter-spacing: -.035em; line-height: 1.45; }
 .stack { margin-top: 9px; color: var(--muted); font-size: 11px; line-height: 1.6; }
-.project-description { max-width: 62ch; margin-top: 17px; font-size: 14px; line-height: 1.95; color: #515955; }
-.project-links { display: flex; flex-wrap: wrap; gap: 26px; margin-top: 14px; }
+.project-description { max-width: 62ch; margin-top: 14px; font-size: 13px; line-height: 1.9; color: #515955; }
+.project-links { display: flex; flex-wrap: wrap; gap: 26px; margin-top: 13px; }
 .project-links a { padding-block: 6px; font-size: 12px; line-height: 1.5; }
 .project-links span { margin-left: 5px; }
 .project-image { overflow: hidden; border: 1px solid #e0e2dc; border-radius: 3px; }
 .project-image img { width: 100%; }
-.lead-image { margin-top: 24px; }
 .project + .project { margin-top: 43px; padding-top: 36px; border-top: 1px solid var(--line); }
-.project-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 35px; }
-.project-row h3 { font-size: 21px; }
-.project-row .project-description { font-size: 13px; margin-top: 14px; line-height: 1.9; }
-.project-row .project-links { margin-top: 13px; }
-.project-row .project-image { align-self: center; }
+.project-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: 35px; }
 
 .other-projects { margin-top: 48px; padding-top: 35px; border-top: 1px solid var(--line); }
 .other-projects .section-title { margin-bottom: 9px; }
@@ -74,7 +69,7 @@ img { display: block; max-width: 100%; height: auto; }
   .layout { grid-template-columns: 175px minmax(0, 1fr); gap: 44px; width: calc(100% - 72px); }
   .profile h1 { font-size: 31px; }
   .project-row { gap: 25px; }
-  .project-row h3 { font-size: 20px; }
+  .project h3 { font-size: 20px; }
 }
 
 @media (max-width: 900px) {
@@ -96,13 +91,10 @@ img { display: block; max-width: 100%; height: auto; }
   .profile-languages { margin-top: 8px; font-size: 11px; }
   .project-nav { column-gap: 19px; padding-top: 15px; }
   .project-nav a { font-size: 11px; }
-  .project h3 { font-size: 23px; }
-  .project-description { font-size: 13px; margin-top: 13px; line-height: 1.9; }
+  .project h3 { font-size: 21px; }
+  .project-description { margin-top: 12px; }
   .project-links { margin-top: 11px; }
-  .lead-image { margin-top: 19px; }
   .project-row { grid-template-columns: 1fr; gap: 20px; }
-  .project-row h3 { font-size: 21px; }
-  .project-row .project-description { margin-top: 12px; }
   .project + .project { margin-top: 30px; padding-top: 27px; }
   .other-projects { margin-top: 31px; padding-top: 26px; }
   .other-project { grid-template-columns: 96px minmax(0, 1fr); gap: 17px; padding-block: 20px; }
