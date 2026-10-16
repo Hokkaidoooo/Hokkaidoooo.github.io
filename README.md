@@ -4,6 +4,8 @@
 
 网站地址：<https://hokkaidoooo.github.io/>。
 
+学习笔记与日常文章在 [Hokkaido · 手记](https://hokkaidoooo.github.io/blog/)，也可从站内导航进入。
+
 ## 本地查看
 
 在仓库根目录运行 Python 静态服务器，然后访问 <http://127.0.0.1:4186/>：
@@ -22,6 +24,8 @@ python -m http.server 4186 --bind 127.0.0.1
 - GitHub Pages 使用 `main` 分支的仓库根目录发布。`.nojekyll` 使静态文件直接发布。
 
 网页不加载第三方字体、统计脚本或远程图片。全部项目链接指向相应公开仓库，系统原理实验室另有在线体验入口。
+
+排版参考 [《排版的艺术：一条很长很长的路》](https://re.karlbaey.top/articles/typography/)：系统字体、清楚的标题层级、适当留白和常显的内容链接。正文使用相对字号，窄屏通过换行与单栏布局保持可读性。
 
 ## 图片来源
 
