@@ -11,7 +11,6 @@ ASSETS = (
     ("supply-chain-risk-core", ("assets", "readme-risk-core.png"), "risk-overview.webp", (1440, 800), None),
     ("cumcm-2023-multibeam", ("assets", "readme-multibeam.png"), "multibeam.webp", (1080, 600), None),
     ("nanjing-weather-visualization", ("assets", "readme-weather-overview.png"), "weather.webp", (1080, 675), None),
-    ("campus-news-portal", ("docs", "validation", "root-portal.png"), "news-portal.webp", (1080, 675), (0, 0, 1280, 800)),
 )
 
 

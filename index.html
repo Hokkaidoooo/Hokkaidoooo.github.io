@@ -3,121 +3,197 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fafaf8">
-  <meta name="description" content="Hokkaido 的项目：C++ HTTP 服务器、产业链风险分析、MRP、系统原理实验室、数学建模与数据可视化。">
+  <meta name="theme-color" content="#f6f7f2">
+  <meta name="description" content="Hokkaido 的作品集。探索系统原理、服务端开发、数据分析与实用工具，查看项目源码和在线体验。">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Hokkaido · 项目">
-  <meta property="og:description" content="系统实验、服务端程序、建模与数据分析。附源码和在线体验入口。">
+  <meta property="og:title" content="Hokkaido · 从原理出发，做有用的作品">
+  <meta property="og:description" content="系统、数据与工具。用代码理解问题，把想法变成可体验的作品。">
   <meta property="og:url" content="https://hokkaidoooo.github.io/">
   <meta property="og:locale" content="zh_CN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="canonical" href="https://hokkaidoooo.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/site.css">
-  <title>Hokkaido · 项目</title>
+  <title>Hokkaido · 作品集</title>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">跳到正文</a>
-  <div class="layout">
-    <header class="profile">
-      <h1><a href="#top">Hokkaido</a></h1>
-      <p class="profile-languages">C++ / Java / Python</p>
-      <a class="profile-github" href="https://github.com/Hokkaidoooo">GitHub <span aria-hidden="true">↗</span></a>
-      <nav class="project-nav" aria-label="站内导航">
-        <a href="#http">C++ HTTP 服务器</a>
-        <a href="#risk">产业链风险分析</a>
-        <a href="#mrp">物料需求计划</a>
-        <a href="#systems">系统原理实验室</a>
-        <a href="#more">其他项目</a>
-        <a href="https://hokkaidoooo.github.io/blog/">手记</a>
-      </nav>
-    </header>
-
-    <main id="main" tabindex="-1">
-      <section class="projects" aria-labelledby="projects-title">
-        <h2 class="section-title" id="projects-title">项目</h2>
-
-        <article class="project project-row" id="http" aria-labelledby="http-title">
-          <div class="project-copy">
-            <h3 id="http-title">C++ HTTP 服务器</h3>
-            <p class="stack">C++17 / Linux / MongoDB</p>
-            <p class="project-description">epoll 管理连接，线程池处理请求。实现了分段请求解析、注册登录和 PNG 上传。</p>
-            <div class="project-links"><a href="https://github.com/Hokkaidoooo/cpp-http-server">源码与说明 <span aria-hidden="true">↗</span></a></div>
-          </div>
-          <figure class="project-image">
-            <img src="assets/http-server.svg" width="1200" height="760" alt="服务器结构示意：epoll 管理连接，工作线程通过完成队列交回结果" fetchpriority="high">
+  <header class="site-header wrap">
+    <a class="brand" href="#top" aria-label="Hokkaido，回到首页顶部">
+      <span class="brand-mark" aria-hidden="true">h<span>.</span></span>
+      <span>Hokkaido<span class="brand-caption">个人作品集</span></span>
+    </a>
+    <nav class="site-nav" aria-label="站内导航">
+      <a href="#projects">精选项目</a><a href="#tools">实用工具</a>
+      <a href="https://hokkaidoooo.github.io/blog/">手记</a>
+      <a class="nav-github" href="https://github.com/Hokkaidoooo">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="hero wrap" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="small-rule" aria-hidden="true"></span>代码 · 实验 · 记录</p>
+        <h1 id="intro-title">从原理出发，<br><span>做有用的作品。</span></h1>
+        <p class="hero-description">你好，我是 Hokkaido。<br>在系统、数据与工具之间探索，用代码理解问题，<br class="desktop-break">也让日常的小事变得更顺手。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">浏览作品 <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="https://hokkaidoooo.github.io/blog/">读一些手记 <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="hero-stack">C++ <span aria-hidden="true">/</span> Java <span aria-hidden="true">/</span> Python <span aria-hidden="true">/</span> JavaScript</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-heading"><span>IDEAS INTO CODE</span><span class="art-cross">+</span></div>
+        <svg viewBox="0 0 560 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs><pattern id="art-grid" width="32" height="32" patternUnits="userSpaceOnUse" patternTransform="matrix(1 .5 -1 .5 280 70)"><path d="M32 0H0V32" stroke="#36544a" stroke-width="1"/></pattern></defs>
+          <path d="M-40 225 280 65 600 225 280 385Z" fill="url(#art-grid)"/>
+          <path d="m107 217 173 87 173-87M280 304v57M182 179l98-49 98 49" stroke="#789386" stroke-dasharray="4 7"/>
+          <path d="m280 157 105 53-105 53-105-53Z" fill="#152e25"/>
+          <path d="m280 111 105 53-105 53-105-53Z" fill="#dce7c8"/>
+          <path d="m175 164 105 53v94l-105-53Z" fill="#7b9b76"/>
+          <path d="m280 217 105-53v94l-105 53Z" fill="#acc29a"/>
+          <path d="m240 157-17 8 17 9m72-17 17 8-17 9m-24-24-14 29" stroke="#365347" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="m107 237 51 26-51 26-51-26Z" fill="#142e25"/>
+          <path d="m107 196 51 26-51 26-51-26Z" fill="#e1bd83"/>
+          <path d="m56 222 51 26v44l-51-26Z" fill="#95754e"/>
+          <path d="m107 248 51-26v44l-51 26Z" fill="#bc985f"/>
+          <path d="m453 237 51 26-51 26-51-26Z" fill="#142e25"/>
+          <path d="m453 196 51 26-51 26-51-26Z" fill="#d1d4e6"/>
+          <path d="m402 222 51 26v44l-51-26Z" fill="#7e86a2"/>
+          <path d="m453 248 51-26v44l-51 26Z" fill="#adb3cb"/>
+          <circle cx="280" cy="362" r="4" fill="#dce7c8"/>
+          <path d="M280 76V56M270 66h20M117 125v-12m-6 6h12M440 135v-12m-6 6h12" stroke="#94ad97" stroke-width="1.5"/>
+        </svg>
+        <div class="art-footer"><span>SYSTEMS</span><span>DATA</span><span>TOOLS</span></div>
+      </div>
+    </section>
+    <nav class="section-index wrap" aria-label="作品分类">
+      <a href="#projects"><span>01</span> 工程与系统 <span aria-hidden="true">↘</span></a>
+      <a href="#tools"><span>02</span> 日常工具 <span aria-hidden="true">↘</span></a>
+      <a href="#more"><span>03</span> 建模与探索 <span aria-hidden="true">↘</span></a>
+    </nav>
+    <section class="section wrap projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">SELECTED WORK</p><h2 id="projects-title">工程与系统</h2></div>
+        <p class="section-intro">从连接管理到数据计算，<br>在具体问题里理解原理。</p>
+      </div>
+      <article class="featured-project project" id="http" aria-labelledby="http-title">
+        <div class="featured-copy">
+          <p class="project-kicker"><span class="project-number">01</span> 服务端开发</p>
+          <h3 id="http-title">C++ HTTP 服务器</h3>
+          <p class="project-description">从连接建立到响应返回，<br>走通一次 HTTP 请求的完整路径。</p>
+          <p class="project-detail">epoll 管理连接，线程池处理请求。支持分段请求解析、注册登录与 PNG 上传。</p>
+          <ul class="tags" aria-label="C++ HTTP 服务器技术栈"><li>C++17</li><li>Linux</li><li>MongoDB</li></ul>
+          <a class="text-link" href="https://github.com/Hokkaidoooo/cpp-http-server">查看源码与说明 <span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="featured-image">
+          <img src="assets/http-server.svg" width="1200" height="760" alt="服务器结构示意：epoll 管理连接，工作线程通过完成队列交回结果" fetchpriority="high">
+          <figcaption><span>连接、请求与工作线程</span><span>结构示意</span></figcaption>
+        </figure>
+      </article>
+      <div class="project-grid">
+        <article class="project project-card" id="risk" aria-labelledby="risk-title">
+          <figure class="card-image risk-image">
+            <img src="assets/risk-overview.webp" width="1440" height="800" alt="产业链分析的合成案例、报告流程与传导示意，图中标有数据来源" loading="lazy">
+            <figcaption>合成演示案例</figcaption>
           </figure>
-        </article>
-
-        <article class="project project-row" id="risk" aria-labelledby="risk-title">
-          <div class="project-copy">
+          <div class="card-copy">
+            <p class="project-kicker"><span class="project-number">02</span> 数据分析</p>
             <h3 id="risk-title">产业链风险分析与授信研究</h3>
-            <p class="stack">Python / NetworkX / NumPy</p>
-            <p class="project-description">读取工商财务数据，计算评分与产业链传导情景，按授信规则导出报告。附合成演示案例和本人编制的决赛分析成品。</p>
-            <div class="project-links"><a href="https://github.com/Hokkaidoooo/supply-chain-risk-core">源码与说明 <span aria-hidden="true">↗</span></a></div>
+            <p class="project-description">把财务指标与产业链联系起来，观察风险如何传导，再按授信规则形成报告。</p>
+            <ul class="tags" aria-label="产业链分析技术栈"><li>Python</li><li>NetworkX</li><li>NumPy</li></ul>
+            <a class="text-link" href="https://github.com/Hokkaidoooo/supply-chain-risk-core">查看源码与说明 <span aria-hidden="true">↗</span></a>
           </div>
-          <figure class="project-image">
-            <img src="assets/risk-overview.webp" width="1440" height="800" alt="风险分析项目的合成案例、报告流程和产业链传导示意，图中保留数据来源说明" loading="lazy">
-          </figure>
         </article>
-
-        <article class="project project-row" id="mrp" aria-labelledby="mrp-title">
-          <div class="project-copy">
-            <h3 id="mrp-title">MRP 物料需求计划系统</h3>
-            <p class="stack">Java / Struts2 / Hibernate / MySQL</p>
-            <p class="project-description">根据 BOM、库存和批量规则计算分期物料需求。重算时，在一个事务里替换整批结果。</p>
-            <div class="project-links"><a href="https://github.com/Hokkaidoooo/mrp-system">源码与说明 <span aria-hidden="true">↗</span></a></div>
-          </div>
-          <figure class="project-image">
+        <article class="project project-card" id="mrp" aria-labelledby="mrp-title">
+          <figure class="card-image mrp-image">
             <img src="assets/mrp-system.svg" width="1200" height="760" alt="物料需求计划结构示意：成品、组件和共用物料组成多层 BOM" loading="lazy">
+            <figcaption>结构示意</figcaption>
           </figure>
-        </article>
-
-        <article class="project project-row" id="systems" aria-labelledby="systems-title">
-          <div class="project-copy">
-            <h3 id="systems-title">系统原理实验室</h3>
-            <p class="stack">JavaScript</p>
-            <p class="project-description">三个交互实验：Cache 替换、地址翻译、TCP Reno。可以调整参数，也可以用同一组访问序列对照 LRU 和 FIFO。</p>
-            <div class="project-links">
-              <a href="https://hokkaidoooo.github.io/cs-systems-lab/">在线体验 <span aria-hidden="true">↗</span></a>
-              <a href="https://github.com/Hokkaidoooo/cs-systems-lab">源码 <span aria-hidden="true">↗</span></a>
-            </div>
+          <div class="card-copy">
+            <p class="project-kicker"><span class="project-number">03</span> 业务系统</p>
+            <h3 id="mrp-title">MRP 物料需求计划</h3>
+            <p class="project-description">根据 BOM、库存与批量规则展开分期物料需求，在同一事务中完成整批结果替换。</p>
+            <ul class="tags" aria-label="MRP 技术栈"><li>Java</li><li>Struts2</li><li>Hibernate</li><li>MySQL</li></ul>
+            <a class="text-link" href="https://github.com/Hokkaidoooo/mrp-system">查看源码与说明 <span aria-hidden="true">↗</span></a>
           </div>
-          <figure class="project-image">
-            <img src="assets/systems-lab.webp" width="1280" height="800" alt="Cache 实验的实际界面：参数输入、缓存状态，以及 LRU 和 FIFO 的对照结果" loading="lazy">
-          </figure>
         </article>
-      </section>
-
-      <section class="other-projects" id="more" aria-labelledby="more-title">
-        <h2 class="section-title" id="more-title">其他项目</h2>
-
-        <article class="other-project" aria-labelledby="multibeam-title">
+      </div>
+      <article class="systems-project project" id="systems" aria-labelledby="systems-title">
+        <div class="systems-copy">
+          <p class="project-kicker"><span class="project-number">04</span> 交互实验</p>
+          <h3 id="systems-title">把系统原理，<br>放到眼前运行。</h3>
+          <p class="project-description">在系统原理实验室里，调整参数、逐步观察 Cache 替换、地址翻译与 TCP Reno。</p>
+          <p class="project-detail">同一组访问序列，也能对照 LRU 与 FIFO。</p>
+          <div class="project-links">
+            <a class="button button-primary" href="https://hokkaidoooo.github.io/cs-systems-lab/">打开实验室 <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://github.com/Hokkaidoooo/cs-systems-lab">查看源码 <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <figure class="systems-image">
+          <img src="assets/systems-lab.webp" width="1280" height="800" alt="系统原理实验室的实际界面：Cache 参数、缓存状态与 LRU、FIFO 对照结果" loading="lazy">
+          <figcaption>系统原理实验室 · 实际界面</figcaption>
+        </figure>
+      </article>
+    </section>
+    <section class="tool-section" id="tools" aria-labelledby="tools-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">MADE FOR EVERYDAY</p><h2 id="tools-title">让小事，更顺手。</h2></div>
+          <p class="section-intro">围绕真实使用场景，<br>做可以带走的工具。</p>
+        </div>
+        <div class="tool-grid">
+          <article class="tool-card" aria-labelledby="tracedesk-title">
+            <div class="tool-top"><span class="tool-icon" aria-hidden="true">T<span>↗</span></span><span class="tool-type">知识与检索</span></div>
+            <h3 id="tracedesk-title">TraceDesk</h3>
+            <p>带版本化资料库与证据检索的 AI 客服。回答能追溯到原文，演示售后操作经确认后执行。</p>
+            <ul class="tags" aria-label="TraceDesk 特性"><li>Python</li><li>证据检索</li><li>资料版本</li></ul>
+            <a class="text-link" href="https://github.com/Hokkaidoooo/tracedesk">了解项目 <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="tool-card" aria-labelledby="exporter-title">
+            <div class="tool-top"><span class="tool-icon exporter-icon" aria-hidden="true">↓<span>文</span></span><span class="tool-type">浏览器扩展</span></div>
+            <h3 id="exporter-title">知乎专栏导出</h3>
+            <p>将自己有权阅读的专栏保存为 Markdown、离线 HTML 与本地图片，方便个人学习和检索。</p>
+            <ul class="tags" aria-label="知乎导出特性"><li>Chrome</li><li>离线阅读</li><li>失败重试</li></ul>
+            <a class="text-link" href="https://github.com/Hokkaidoooo/zhihu-column-exporter">了解与下载 <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section wrap" id="more" aria-labelledby="more-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">MORE TO EXPLORE</p><h2 id="more-title">建模与探索</h2></div>
+        <p class="section-intro">一些从问题和数据出发的尝试。</p>
+      </div>
+      <div class="explore-grid">
+        <article class="explore-card" aria-labelledby="multibeam-title">
           <img src="assets/multibeam.webp" width="1080" height="600" alt="多波束测线与海底地形的概念示意" loading="lazy">
-          <div>
-            <h3 id="multibeam-title"><a href="https://github.com/Hokkaidoooo/cumcm-2023-multibeam">多波束测线规划 <span aria-hidden="true">↗</span></a></h3>
-            <p>2023 数模国赛 B 题团队作品。保留论文和代码，补充了覆盖几何与测线约束验算。</p>
-          </div>
+          <p class="explore-category">数学建模 / 团队作品</p>
+          <h3 id="multibeam-title"><a href="https://github.com/Hokkaidoooo/cumcm-2023-multibeam">多波束测线规划 <span aria-hidden="true">↗</span></a></h3>
+          <p>2023 数模国赛 B 题。结合覆盖几何与测线约束，探索海底地形的测量方案。</p>
         </article>
-
-        <article class="other-project" aria-labelledby="weather-title">
+        <article class="explore-card" aria-labelledby="weather-title">
           <img src="assets/weather.webp" width="1080" height="675" alt="南京 2023 年全年高低温与天气类别统计" loading="lazy">
-          <div>
-            <h3 id="weather-title"><a href="https://github.com/Hokkaidoooo/nanjing-weather-visualization">南京天气可视化 <span aria-hidden="true">↗</span></a></h3>
-            <p>使用保存的南京 2023 年 365 天天气记录，生成月度图表和年度词云，共 61 张图。</p>
-          </div>
+          <p class="explore-category">数据可视化</p>
+          <h3 id="weather-title"><a href="https://github.com/Hokkaidoooo/nanjing-weather-visualization">一座城市，一年的天气 <span aria-hidden="true">↗</span></a></h3>
+          <p>整理南京 2023 年的 365 天天气记录，用月度图表与年度词云观察四季。</p>
         </article>
-
-        <article class="other-project" aria-labelledby="news-title">
-          <img src="assets/news-portal.webp" width="1080" height="675" alt="校园新闻门户在隔离验收环境中的实际页面" loading="lazy">
-          <div>
-            <h3 id="news-title"><a href="https://github.com/Hokkaidoooo/campus-news-portal">校园新闻门户 <span aria-hidden="true">↗</span></a></h3>
-            <p>Vue 2 前台，Servlet/JSP 后台。支持新闻通知展示，以及内容和账号管理。</p>
-          </div>
+        <article class="explore-card" aria-labelledby="news-title">
+          <img src="assets/news-portal.svg" width="1080" height="675" alt="新闻门户功能示意：新闻列表、通知公告与内容管理，不代表实际运行截图" loading="lazy">
+          <p class="explore-category">Web 应用</p>
+          <h3 id="news-title"><a href="https://github.com/Hokkaidoooo/campus-news-portal">校园新闻门户 <span aria-hidden="true">↗</span></a></h3>
+          <p>从新闻通知展示到内容与账号管理，连接 Vue 前台和 Servlet/JSP 后台。</p>
         </article>
-      </section>
-
-      <footer class="site-footer"><a href="#top">回到顶部 <span aria-hidden="true">↑</span></a></footer>
-    </main>
-  </div>
+      </div>
+    </section>
+    <section class="notes-section wrap" aria-labelledby="notes-title">
+      <div><p class="eyebrow">NOTES & THOUGHTS</p><h2 id="notes-title">项目之外，还有手记。</h2><p>记录计算机原理、数学问题，和那些终于想明白的瞬间。</p></div>
+      <a class="button button-outline" href="https://hokkaidoooo.github.io/blog/">去手记看看 <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer class="site-footer wrap">
+    <a class="footer-name" href="#top">Hokkaido<span aria-hidden="true">.</span></a>
+    <p>保持好奇，继续动手。</p>
+    <a class="text-link" href="#top">回到顶部 <span aria-hidden="true">↑</span></a>
+  </footer>
 </body>
 </html>
