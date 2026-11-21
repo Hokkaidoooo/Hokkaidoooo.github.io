@@ -1,8 +1,12 @@
 # Hokkaido 的个人作品集
 
+**简体中文** · [English](README.en.md) · [Español](README.es.md) · [日本語](README.ja.md)
+
 个人项目网站，收录系统实验、服务端、产业链分析、日常工具、数学建模和数据可视化项目。使用暖白与墨绿配色，按工程与系统、日常工具、建模与探索组织内容。桌面端展示图文卡片，手机端按阅读顺序展开。
 
 网站地址：<https://hokkaidoooo.github.io/>。
+
+作品集：[简体中文](https://hokkaidoooo.github.io/) · [English](https://hokkaidoooo.github.io/en/) · [Español](https://hokkaidoooo.github.io/es/) · [日本語](https://hokkaidoooo.github.io/ja/)。各语言页面可直接访问，不依赖脚本或浏览器语言判断。
 
 学习笔记与日常文章在 [Hokkaido · 手记](https://hokkaidoooo.github.io/blog/)，也可从站内导航进入。
 
@@ -18,7 +22,7 @@ python -m http.server 4186 --bind 127.0.0.1
 
 ## 更新内容
 
-- 项目名称、介绍和链接统一维护在 `index.html`。
+- 页面结构、中文内容和项目链接统一维护在 `index.html`。英语、西班牙语和日语文案在 `tools/home-copy.json`；修改后用 Python 3.10+ 运行 `python tools/localize.py`，再用 `python tools/localize.py --check` 核对三个静态页面。
 - 布局、配色与响应式规则在 `assets/site.css`。
 - 404 页面在 `404.html`；图标和项目图片在 `assets`。
 - GitHub Pages 使用 `main` 分支的仓库根目录发布。`.nojekyll` 使静态文件直接发布。
